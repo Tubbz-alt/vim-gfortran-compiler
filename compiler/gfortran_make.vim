@@ -18,10 +18,11 @@ endif
 CompilerSet errorformat=
             \%-Ggfortran%.%#,
             \%-Gmake%.%#,
+            \%-Grm\ %.%#,
             \%A%f:%l.%c:,
             \%A%f:%l:,
-            \%C,
-            \%C%p%*[0123456789^],
+            \%-C,
+            \%-C%p%*[0123456789^],
             \%-Z%trror:\ %m,
             \%-Z%tarning:\ %m,
             \%-C%.%#
