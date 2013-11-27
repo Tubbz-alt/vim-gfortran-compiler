@@ -19,4 +19,15 @@ one, just modify the autocmd comamnd to:
 ```vim
 au FileType fortran compiler gfortran_gfortran
 ```
+
+Of course, the compiler can be enable at any time by issue the compiler
+command:
+```vim
+compiler gfortran_make
+```
+or
+```vim
+compiler gfortran_gfortran
+```
+
  vim:sw=4 ts=4 et sta cin spell tw=78:
