@@ -6,9 +6,9 @@ Set default compiler based on FileType
 filetype off
 set rtp+=~/.vim/bundle/vim-gfortran-compiler
 filetype plugin indent on
-au FileType *.f90 compiler gfortran_make
+au FileType fortran compiler gfortran_make
 ```
 ```vim
 Bundle 'linktohack/vim-gfortran-compiler'
-au FileType *.f90 compiler gfortran_make
+au FileType fortran compiler gfortran_make
 ```
