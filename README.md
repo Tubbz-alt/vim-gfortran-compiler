@@ -1,6 +1,6 @@
 # Usage
-Clone and add vim-gfortran-compiler to vim's runtimepath or using Vundle
-Set default compiler based on FileType
+Clone and add vim-gfortran-compiler to vim's runtimepath or using Vundle.
+Set default compiler based on FileType.
 
 ```vim
 filetype off
@@ -12,3 +12,11 @@ au FileType fortran compiler gfortran_make
 Bundle 'linktohack/vim-gfortran-compiler'
 au FileType fortran compiler gfortran_make
 ```
+It should be better to create a simple Makefile instead manually compile the
+program for it's simplicity and flexibility. Nonetheless if you don't have
+one, just modify the autocmd comamnd to:
+
+```vim
+au FileType fortran compiler gfortran_gfortran
+```
+ vim:sw=4 ts=4 et sta cin spell tw=78:
