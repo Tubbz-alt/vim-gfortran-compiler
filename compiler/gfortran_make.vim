@@ -16,16 +16,13 @@ if exists(":CompilerSet") != 2    " older Vim always used :setlocal
 endif
 
 CompilerSet errorformat=
-            \%-Ggfortran%.%#,
-            \%-Gmake%.%#,
-            \%-Grm\ %.%#,
             \%A%f:%l.%c:,
             \%A%f:%l:,
-            \%C,
             \%C%p%*[0123456789^],
             \%Z%trror:\ %m,
             \%Z%tarning:\ %m,
             \%C%.%#,
-            \%trror:\ %m\ '%f'
+            \%trror:\ %m\ '%f',
+            \%-G%.%#
 
 CompilerSet makeprg=make
