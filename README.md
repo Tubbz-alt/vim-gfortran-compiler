@@ -17,7 +17,7 @@ program for it's simplicity and flexibility. Nonetheless if you don't have
 one, just modify the autocmd comamnd to:
 
 ```vim
-au FileType fortran compiler gfortran
+au FileType fortran compiler gfortran_single
 ```
 
 Of course, the compiler can be enable at any time by issue the compiler
@@ -27,7 +27,7 @@ compiler gfortran_make
 ```
 or
 ```vim
-compiler gfortran
+compiler gfortran_single
 ```
 
  vim:sw=4 ts=4 et sta cin spell tw=78:
